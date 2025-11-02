@@ -19,12 +19,12 @@ function OtherProducts () {
               tev varētu patikt
             </h2>
             <div className="hidden md:flex gap-2 items-center">
-              <div className="w-11 h-11 flex items-center justify-center bg-light rounded-full">
-                <img src={ArrowLeft} alt="" />
-              </div>
-              <div className="w-11 h-11 flex items-center justify-center bg-light rounded-full">
-                <img src={ArrowRight} alt="" />
-              </div>
+              <button className="w-11 h-11 flex items-center justify-center bg-light rounded-full transition-all duration-200 hover:scale-110 hover:shadow-md active:scale-95" aria-label="Previous products">
+                <img src={ArrowLeft} alt="" aria-hidden="true" />
+              </button>
+              <button className="w-11 h-11 flex items-center justify-center bg-light rounded-full transition-all duration-200 hover:scale-110 hover:shadow-md active:scale-95" aria-label="Next products">
+                <img src={ArrowRight} alt="" aria-hidden="true" />
+              </button>
             </div>
           </div>
         </Container>

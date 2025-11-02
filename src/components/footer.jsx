@@ -124,8 +124,15 @@ function Footer () {
           </div>
           <div className="flex gap-6 order-1 md:order-3 mb-8 md:mb-0">
             {socialLinks.map((link) => (
-              <a key={link.alt} href={link.url} target="_blank" rel="noopener noreferrer">
-                <img src={link.src} alt={link.alt} className="w-6 h-6" loading="lazy" />
+              <a
+                key={link.alt}
+                href={link.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="transition-all duration-200 hover:scale-125 hover:opacity-80 active:scale-95"
+                aria-label={`Visit our ${link.alt} page`}
+              >
+                <img src={link.src} alt={link.alt} className="w-6 h-6" loading="lazy" aria-hidden="true" />
               </a>
             ))}
           </div>

@@ -20,12 +20,12 @@ function Product () {
             <div className="relative h-fit">
               <img src={MainPhoto} alt="" />
               <div className="absolute flex items-center bottom-6 right-6 gap-2">
-                <div className="w-11 h-11 flex items-center justify-center bg-white rounded-full">
-                  <img src={ArrowLeft} alt="" />
-                </div>
-                <div className="w-11 h-11 flex items-center justify-center bg-white rounded-full">
-                  <img src={ArrowRight} alt="" />
-                </div>
+                <button className="w-11 h-11 flex items-center justify-center bg-white rounded-full transition-all duration-200 hover:scale-110 hover:shadow-lg active:scale-95" aria-label="Previous image">
+                  <img src={ArrowLeft} alt="" aria-hidden="true" />
+                </button>
+                <button className="w-11 h-11 flex items-center justify-center bg-white rounded-full transition-all duration-200 hover:scale-110 hover:shadow-lg active:scale-95" aria-label="Next image">
+                  <img src={ArrowRight} alt="" aria-hidden="true" />
+                </button>
               </div>
             </div>
           </div>

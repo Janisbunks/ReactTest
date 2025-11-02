@@ -40,13 +40,19 @@ function Header () {
                   </div>
                 </div>
                 <div className="flex items-center gap-6">
-                  <div className="flex gap-1.5 items-center">
-                    <img className="w-5 h-5" src={worldIcon} alt="" />
+                  <button className="flex gap-1.5 items-center cursor-pointer hover:opacity-80 transition-opacity duration-200" aria-label="Change language">
+                    <img className="w-5 h-5" src={worldIcon} alt="world" aria-hidden="true" />
                     <span className="font-semibold font-inter text-sm text-white">LV</span>
-                  </div>
-                  <img className="w-5 h-5" src={userIcon} alt="" />
-                  <img className="w-5 h-5" src={heartIcon} alt="" />
-                  <img className="w-5 h-5" src={cartIcon} alt="" />
+                  </button>
+                  <button className="transition-opacity duration-200 hover:opacity-80" aria-label="User account">
+                    <img className="w-5 h-5" src={userIcon} alt="user" />
+                  </button>
+                  <button className="transition-opacity duration-200 hover:opacity-80" aria-label="Wishlist">
+                    <img className="w-5 h-5" src={heartIcon} alt="heart" />
+                  </button>
+                  <button className="transition-opacity duration-200 hover:opacity-80" aria-label="Shopping cart">
+                    <img className="w-5 h-5" src={cartIcon} alt="cart" />
+                  </button>
                 </div>
               </div>
             </div>
